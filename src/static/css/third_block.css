@@ -1,21 +1,31 @@
 #block-three {
+    /* display: none; */
     top: 100%;
     width: 100%;
-    height: auto;
+    height: 100vh;
 
     position: absolute;
     background-color: rgb(238, 238, 238);
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 0;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
 }
 
-#about-header {
-    /* margin-top: 40px; */
+#about-header{
     /* font-weight: bold; */
     display: grid;
     justify-items: center;
+}
+
+#about-header-wrapper {
+    display: none;
+    justify-items: center;
+}
+
+#about-body-wrapper {
+    display: none;
 }
 
 #underline-about {
@@ -23,6 +33,21 @@
     height: 6px;
     width: 60px;
     margin-bottom: 20px;
+    margin-left: -1500px;
+    animation-name: underline-animation;
+    animation-duration: 0.8s;
+    /* transition: 0.2s; */
+    animation-fill-mode: forwards;
+}
+
+@keyframes underline-animation {
+    from {
+        margin-left: -1500
+    }
+
+    to {
+        margin-left: 0;
+    }
 }
 
 .hex-container {
@@ -30,6 +55,7 @@
     align-items: center;
     justify-items: center;
     margin-top: 10px;
+    /* height: 240px; */
 }
 
 .hexagon {
@@ -43,7 +69,23 @@
     display: grid;
     align-items: center;
     justify-items: center;
+    transform-style: preserve-3d;
+    transform: rotatey(180deg);
+    animation-name: hexagon-animation;
+    animation-duration: 0.8s;
+    /* transition: 0.2s; */
+    animation-fill-mode: forwards;
 }
+
+@keyframes hexagon-animation {
+    from {
+        transform: rotatey(180deg);
+    }
+    to {
+        transform: rotatey(0deg);
+    }
+}
+
 
 .about-logo {
     width: 80px;
@@ -54,19 +96,33 @@
     margin-top: 0;
 }
 
+/* @keyframes about-p-animation {
+    from {
+        margin-right: -1500px;
+    }
+    to {
+        margin-right: 0;
+    }
+}
+
+#about-above-row  {
+    margin-right: -1500px;
+    animation-name: about-p-animation;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
+} */
+
 
 @media (max-width: 800px) {
     
     #block-three {
         top: 200%;
-        height: auto;
+        /* height: auto; */
         padding-top: 20px;
         padding-bottom: 20px;
     }
 
-    #about-header {
-        /* margin-top: 20px; */
-    }
+   
 
     .hex-container {
         width: 100%;

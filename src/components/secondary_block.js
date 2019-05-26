@@ -3,6 +3,9 @@ import React, { Component } from 'react'
 //components
 import ThirdBlock from './third_block';
 
+//js_static
+import isInViewport from '../static/js/isIntoView';
+
 //css
 import '../static/css/secondary_block.css';
 
@@ -107,7 +110,7 @@ class SecondaryBlock extends Component {
         // });
 
         let check_div_attrib = setInterval(() => {
-            if (this.isInViewport(document.getElementById('hybrid-table'))) {
+            if (isInViewport(document.getElementById('hybrid-table'))) {
                 if (document.getElementById('secondary-block').style.display === 'block') {
                     let delay = 0.5;
                     for (let i in this.state.attributes) {
@@ -116,13 +119,15 @@ class SecondaryBlock extends Component {
 
                     }
                     clearInterval(check_div_attrib);
+
+                    // document.getElementById('block-three').style.display = 'block';
                 }
             }
         }, 100);
 
 
         let check_div_desc = setInterval(() => {
-            if (this.isInViewport(document.getElementById('secondary-block'))) {
+            if (isInViewport(document.getElementById('secondary-block'))) {
                 if (document.getElementById('secondary-block').style.display === 'block') {
                     setTimeout(() => {
                         document.getElementById('desc').style.display = 'block';
@@ -132,12 +137,6 @@ class SecondaryBlock extends Component {
             }
         }, 100);
 
-    }
-
-    isInViewport(target, offset = 0) {
-        if (!target) return false;
-        const top = target.getBoundingClientRect().top;
-        return (top + offset) >= 0 && (top - offset) <= window.innerHeight;
     }
 
     fill_bar(element, value, delay) {
@@ -204,7 +203,6 @@ class SecondaryBlock extends Component {
                     </div>
 
                     <ThirdBlock />
-
                 </div>
             </div>
         )
