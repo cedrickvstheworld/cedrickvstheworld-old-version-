@@ -1,0 +1,85 @@
+#preload-wrapper {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+#preload-wrapper ul {
+    list-style-type: none;
+}
+
+#c-for-ced {
+    height: 150px;
+    width: 130px;
+    /* box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.747); */
+}
+
+
+#dot-wrapper {
+    margin-top: 10px;
+}
+
+.dot-container {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+@keyframes dot_0 {
+    0%   {background-color: rgb(247, 247, 247);}
+    10%  {background-color: rgb(247, 247, 247);}
+    20%  {background-color: rgb(68, 230, 230);}
+    30%  {background-color: rgb(68, 230, 230);}
+    40%  {background-color: rgb(247, 247, 247);}
+    50%  {background-color: rgb(247, 247, 247);}
+    60%  {background-color: rgb(68, 230, 230);}
+    70%  {background-color: rgb(68, 230, 230);}
+    80%  {background-color: rgb(247, 247, 247);}
+    90%  {background-color: rgb(68, 230, 230);}
+    100% {background-color: rgb(68, 230, 230);}
+}
+
+#dot-0 {
+    animation-name: dot_0;
+    animation-delay: 0.5s;
+    animation-duration: 9s;
+    transition: 1s;
+    animation-iteration-count: infinite;
+}
+
+#dot-1 {
+    animation-name: dot_0;
+    animation-delay: 1s;
+    animation-duration: 9s;
+    transition: 1s;
+    animation-iteration-count: infinite;
+}
+
+
+#dot-2 {
+    animation-name: dot_0;
+    animation-delay: 1.5s;
+    animation-duration: 9s;
+    transition: 1s;
+    animation-iteration-count: infinite;
+}
+
+#dot-3 {
+    animation-name: dot_0;
+    animation-delay: 2s;
+    animation-duration: 9s;
+    transition: 1s;
+    animation-iteration-count: infinite;
+}
+
+.loading-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(68, 230, 230);
+}
+
