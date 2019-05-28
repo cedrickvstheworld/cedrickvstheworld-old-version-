@@ -1,7 +1,7 @@
 #block-four {
     /* top: 200%; */
     display: none;
-    width: 100%;
+    /* width: 100%; */
     height: 100vh;
 
     /* position: relative; */
@@ -10,14 +10,199 @@
     padding-bottom: 30px;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    overflow-x: hidden;
+    overflow: hidden;
     margin-top: 0;
     margin-top: 50px;
 }
 
+#portfolio-header-wrapper {
+    display: none;
+    justify-items: center;
+}
+
+#portfolio-body-wrapper {
+    display: none;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+#body-block-portfolio {
+    transition: 0.23s;
+}
+
+
+#underline-portfolio {
+    margin-top: -10px;
+    height: 6px;
+    width: 60px;
+    margin-bottom: 20px;
+    margin-right: -1500px;
+    animation-name: underline-portfolio-animation;
+    animation-duration: 0.8s;
+    /* transition: 0.2s; */
+    animation-fill-mode: forwards;
+}
+
+
+.portfolio-block-showcase {
+    width: 100%;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    /* border-style: solid;
+    border-width: 1px;
+    border-color: rgb(122, 196, 214); */
+}
+
+
+.showcase-cover {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 0;
+    background-color: rgba(0, 0, 0, 0.781);
+    transition: 0.5s ease;
+    top: 100%;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+
+.cover-items-wrapper {
+    display: none;
+}
+
+
+
+.portfolio-block-showcase:hover .showcase-cover {   
+    top: 0;
+    height: 300px;
+}
+
+.portfolio-block-showcase:hover .cover-items-wrapper {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.showcase-cover-button {
+    position: absolute;
+    margin-top: -400px;
+    opacity: 0;
+    outline: none;
+    padding-left: 28px;
+    padding-right: 28px;
+    background-color: transparent;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(22, 139, 155);
+    color: rgb(22, 139, 155);
+    height: 45px;
+    width: auto;
+    animation-name: showcase-button-animation;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes showcase-button-animation {
+    from {
+        margin-top: -300px;
+        opacity: 0;
+    }
+    to {
+        margin-top: 0;
+        opacity: 1;
+    }
+}
+
+
+.showcase-cover-button:hover {
+    background-color: rgb(22, 139, 155);
+    color: white;
+}
+
+.showcase-tool-wrapper {
+    position: absolute;
+    bottom: 20px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    margin-left: -200px;
+    opacity: 0;
+    animation-name: tool-wrapper-animation;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes tool-wrapper-animation {
+    from {
+        margin-left: -200px;
+        opacity: 0;
+    }
+    to {
+        margin-left: 0;
+        opacity: 1;
+    }
+}
+
+.tool-logo {
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 45px;
+    height: 45px;
+}
+
+#memo {
+    background-image: url('../images/portfolio_thumbnails/memo_desktop.png');
+    /* border-color: rgb(23, 89, 110); */
+
+}
+
+#cctti {
+    background-image: url('../images/portfolio_thumbnails/cctti_thumbnail_new.png');
+    /* border-color: rgb(224, 114, 11); */
+}
+
+#academia {
+    background-image: url('../images/portfolio_thumbnails/academia_thumbnail.png');
+    /* border-color: rgb(87, 145, 69); */
+    background-position: top;
+}
+
+#ems {
+    background-image: url('../images/portfolio_thumbnails/ems_thumbnail.png');
+    /* border-color: rgb(168, 85, 60); */
+}
+
+#tango_with_django {
+    background-image: url('../images/portfolio_thumbnails/tango_with_django.jpg');
+    /* border-color: rgb(74, 86, 94); */
+}
+
+#university_corner {
+    background-image: url('../images/portfolio_thumbnails/university_corner122.png');
+    /* border-color: rgb(228, 215, 31); */
+}
+
+@keyframes underline-portfolio-animation {
+    from {
+        margin-right: -1500px;
+    }
+
+    to {
+        margin-right: 0;
+    }
+}
 
 @media (max-width: 800px) {
     #block-four {
         /* top: 200%; */
+    }
+
+    #portfolio-body-wrapper {
+        padding: 0;
     }
 }

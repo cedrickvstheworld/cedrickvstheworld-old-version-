@@ -77,6 +77,25 @@
     animation-fill-mode: forwards;
 }
 
+#instinctive-hexagon {
+    animation-delay: 0s;
+}
+#persistent-hexagon {
+    animation-delay: 0.1s;
+}
+#eye-hexagon {
+    animation-delay: 0.2s;
+}
+#flexible-hexagon {
+    animation-delay: 0.5s;
+}
+#spartan-hexagon {
+    animation-delay: 0.4s;
+}
+#fast-hexagon {
+    animation-delay: 0.3s;
+}
+
 @keyframes hexagon-animation {
     from {
         transform: rotatey(180deg);

@@ -19,7 +19,7 @@ class ThirdBlock extends Component {
                     document.getElementById('about-body-wrapper').style.display = 'block';
                     document.getElementById('block-three').style.height = 'auto';
                     document.getElementById('block-four').style.display = 'block';
-                }, 800);
+                }, 1100);
                 clearInterval(check_div_about);
             }
         }, 100);
@@ -32,7 +32,7 @@ class ThirdBlock extends Component {
 
                     <div id="about-header" className="center-align">
                         <div id="about-header-wrapper">
-                            <h3 className="grey-text text-darken-3 animated fadeInDown"><b>ABOUT</b></h3>
+                            <h4 className="grey-text text-darken-3 animated fadeInDown"><b>ABOUT</b></h4>
                             <div id="underline-about" className="grey darken-3"></div>
                         </div>
                     </div>
@@ -41,7 +41,7 @@ class ThirdBlock extends Component {
                         <div id="about-body-wrapper" >
                             <div id="about-above-row" className="row">
                                 <div className="col m4 hex-container center-align">
-                                    <div className="hexagon light-blue lighten-2">
+                                    <div id="instinctive-hexagon" className="hexagon light-blue lighten-2">
                                         <img className="about-logo" src={require('../static/images/initiative_white.png')}
                                             alt="instinctive" />
                                     </div>
@@ -53,19 +53,19 @@ class ThirdBlock extends Component {
                                     </div>
                                 </div>
                                 <div className="col m4  hex-container center-align">
-                                    <div className="hexagon light-blue lighten-2">
+                                    <div id="persistent-hexagon" className="hexagon light-blue lighten-2">
                                         <img className="about-logo" src={require('../static/images/cog_white.png')}
                                             alt="cog" />
                                     </div>
                                     <div id="persistent" className="animated fadeInRight delay-1s">
                                         <h6>Persistent</h6>
                                         <p className="grey-text text-darken-3 about-p">
-                                            I have a habbit of extreme focusing in a particular job. I want a single day to be worthful.
+                                            I have a habbit of extreme focusing in a particular job. I want a single day to be worthful and productive.
                                     </p>
                                     </div>
                                 </div>
                                 <div className="col m4  hex-container center-align">
-                                    <div className="hexagon light-blue lighten-2">
+                                    <div id="eye-hexagon" className="hexagon light-blue lighten-2">
                                         <img className="about-logo" src={require('../static/images/bullseye_white.png')}
                                             alt="bulls-eye" />
                                     </div>
@@ -79,7 +79,7 @@ class ThirdBlock extends Component {
                             </div>
                             <div className="row">
                                 <div className="col m4 hex-container center-align">
-                                    <div className="hexagon light-blue lighten-2">
+                                    <div id="fast-hexagon" className="hexagon light-blue lighten-2">
                                         <img className="about-logo" src={require('../static/images/lightning_white.png')}
                                             alt="lightning" />
                                     </div>
@@ -91,7 +91,7 @@ class ThirdBlock extends Component {
                                     </div>
                                 </div>
                                 <div className="col m4  hex-container center-align">
-                                    <div className="hexagon light-blue lighten-2 center-align">
+                                    <div id="spartan-hexagon" className="hexagon light-blue lighten-2 center-align">
                                         <img className="about-logo" src={require('../static/images/spartan_white.png')}
                                             alt="spartan" />
                                     </div>
@@ -104,7 +104,7 @@ class ThirdBlock extends Component {
                                     </div>
                                 </div>
                                 <div className="col m4  hex-container center-align">
-                                    <div className="hexagon light-blue lighten-2">
+                                    <div id="flexible-hexagon" className="hexagon light-blue lighten-2">
                                         <img className="about-logo" src={require('../static/images/bamboo_white.png')} alt="bamboo" />
                                     </div>
                                     <div id="flexible" className="animated fadeInLeft delay-1s">
