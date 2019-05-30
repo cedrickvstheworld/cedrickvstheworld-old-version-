@@ -9,14 +9,14 @@ class HeaderBlock extends Component {
     componentDidMount() {
         window.addEventListener('load', () => {
 
-            setInterval(() => {
+            let start = setInterval(() => {
                 if (document.getElementById('head-wrapper')) {
                     document.getElementById('head-wrapper').style.display = 'block';
                     document.getElementById('preload-wrapper').className += " animated slideOutUp";
                     setTimeout(() => {
                         document.getElementById('preload-wrapper').style.display = 'none';
                     }, 1000);
-                    clearInterval();
+                    clearInterval(start);
                 }
             }, 3000);
 
