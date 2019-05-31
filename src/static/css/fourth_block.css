@@ -24,6 +24,7 @@
     display: none;
     padding-left: 100px;
     padding-right: 100px;
+    margin-top: 20px;
 }
 
 #body-block-portfolio {
@@ -189,6 +190,22 @@
     /* border-color: rgb(74, 86, 94); */
 }
 
+
+#jwt {
+    background-image: url('../images/portfolio_thumbnails/jwtnodejs.jpeg');
+    /* border-color: rgb(74, 86, 94); */
+}
+
+#face {
+    background-image: url('../images/portfolio_thumbnails/facerecog.jpg');
+    /* border-color: rgb(74, 86, 94); */
+}
+
+#password-validator {
+    background-image: url('../images/portfolio_thumbnails/password.jpg');
+    /* border-color: rgb(74, 86, 94); */
+}
+
 #university_corner {
     background-image: url('../images/portfolio_thumbnails/university_corner122.png');
     /* border-color: rgb(228, 215, 31); */
@@ -290,13 +307,14 @@
     box-shadow: 2px 7px 9px 3px rgba(0, 0, 0, 0.452);
     padding-bottom: 20px;
 }
-#showcase-uppper-block {
+#showcase-upper-block {
     /* background-color: blanchedalmond; */
-    background-image: url('../images/portfolio_thumbnails/cctti_desktop.png');
+    /* background-image: url('../images/portfolio_thumbnails/memo_mobiles.png'); */
     background-position: center;
     background-size: cover;
     width: 100%;
     height: 350px;
+    transition: 0.4s ease;
 }
 #showcase-lower-block {
     display: grid;
@@ -310,10 +328,33 @@
     text-align: justify;
 }
 
+.preview-arrow {
+    color: rgba(121, 121, 121, 0.432);
+
+    top: 155px;
+    display: none;
+}
+
+.preview-arrow:hover {
+    color: rgba(235, 233, 233, 0.815);
+
+}
+
+#prev {
+    position: absolute;
+    left: 7px;
+}
+
+#next {
+    position: absolute;
+    right: 7px;
+}
+
 @media (max-width: 800px) {
 
     #portfolio-body-wrapper {
         padding: 0;
+        margin-top: 10px;
     }
 
     #showcase-center-block {
@@ -333,17 +374,20 @@
         right: -10px;
     }
 
-    #showcase-uppper-block {
-        height: 200px;
-    }
-
-    #showcase-uppper-block {
+    #showcase-upper-block {
         width: 100%;
-        height: 100%;
+        height: auto;
     }
 
     #showcase-lower-block {
         padding-left: 10px;
         padding-right: 10px; 
+        padding-bottom: 20px;
+        /* height: 100%; */
+    }
+
+    .preview-arrow {
+    
+        display: none;
     }
 }

@@ -42,13 +42,13 @@ class ThirdBlock extends Component {
                             <div id="about-above-row" className="row">
                                 <div className="col m4 hex-container center-align">
                                     <div id="instinctive-hexagon" className="hexagon light-blue lighten-2">
-                                        <img className="about-logo" src={require('../static/images/initiative_white.png')}
+                                        <img className="about-logo" src={require('../static/images/pie_white.png')}
                                             alt="instinctive" />
                                     </div>
                                     <div id="instinctive" className="animated fadeInRight delay-1s">
-                                        <h6>Instinctive</h6>
+                                        <h6>Keeping Things Simple</h6>
                                         <p className="grey-text text-darken-3 about-p">
-                                            My instinct can guide me through technical processes and decisions. I work both with my mind and with it.
+                                            I keep whatever simple and straight to the point. Simple is better than complex.
                                     </p>
                                     </div>
                                 </div>

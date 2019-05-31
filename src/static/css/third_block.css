@@ -26,6 +26,8 @@
 
 #about-body-wrapper {
     display: none;
+
+    margin-top: 10px;
 }
 
 #underline-about {
@@ -141,7 +143,9 @@
         padding-top: 20px;
         padding-bottom: 20px;
     }
-
+    #about-body-wrapper {
+        margin-top: -10px;
+    }
    
 
     .hex-container {

@@ -183,7 +183,7 @@ class SecondaryBlock extends Component {
                                     <div id="whos-ced-p" className="animated animated bounceInUp delay-1s">
                                         <p>
                                             I am a dude who likes to do something for a living with passion and heart.
-                                            I always indulge myself on learning and experiencing something new. I love the process of full-stack development.
+                                            I always indulge myself on learning and experiencing something new. I love the process of full-stack software development.
                                     </p>
                                     </div>
                                 </div>
