@@ -77,7 +77,7 @@ class FourthBlock extends Component {
                 },
                 jwt: {
                     title: 'JWT-NodeJs-Express-React',
-                    description: 'This project serves as boilerplate and examples for intergrating JSON Web Token based authentication and authorization for your NodeJs Express API and ReactJs app. It includes token refresh, token blacklisting and device fingerprinting.',
+                    description: 'This project serves as boilerplate and example for intergrating JSON Web Token based authentication and authorization for your NodeJs Express API and ReactJs app. It includes token refresh, token blacklisting and device fingerprinting.',
                     repository: 'https://github.com/cedie712/JWT-NodeJs-Express-React',
                     preview_images: [
                         require('../static/images/portfolio_thumbnails/jwtnodejs.jpeg')
@@ -233,6 +233,7 @@ class FourthBlock extends Component {
                     document.getElementById('block-four').style.height = 'auto';
                     setTimeout(() => {
                         document.getElementById('body-block-portfolio').style.boxShadow = '2px 20px 23px 3px rgb(63, 63, 63)'
+                        document.getElementById('footer-container').style.display = 'block';
                     }, 1000);
                 }, 1600);
                 clearInterval(check_div_portfolio_body);

@@ -68,6 +68,7 @@
     clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
     -webkit-shape-outside: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);   
     shape-outside: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
+    opacity: 0;
     display: grid;
     align-items: center;
     justify-items: center;
@@ -83,26 +84,28 @@
     animation-delay: 0s;
 }
 #persistent-hexagon {
-    animation-delay: 0.1s;
-}
-#eye-hexagon {
     animation-delay: 0.2s;
 }
-#flexible-hexagon {
-    animation-delay: 0.5s;
-}
-#spartan-hexagon {
+#eye-hexagon {
     animation-delay: 0.4s;
 }
+#flexible-hexagon {
+    animation-delay: 0.6s;
+}
+#spartan-hexagon {
+    animation-delay: 0.8s;
+}
 #fast-hexagon {
-    animation-delay: 0.3s;
+    animation-delay: 1s;
 }
 
 @keyframes hexagon-animation {
     from {
+        opacity: 0;
         transform: rotatey(180deg);
     }
     to {
+        opacity: 1;
         transform: rotatey(0deg);
     }
 }

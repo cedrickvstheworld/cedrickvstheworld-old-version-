@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 
 //components
 import FourthBlock from './fourth_block';
+import Footer from './footer';
 
 //js
 import isInViewport from '../static/js/isIntoView';
@@ -119,6 +120,7 @@ class ThirdBlock extends Component {
                     </div>
 
                 <FourthBlock />
+                <Footer />
                 </div>
             </div>
         )

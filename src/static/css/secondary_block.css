@@ -76,6 +76,10 @@
     display: none; 
 }
 
+#hybrid-table { 
+    scrollbar-width: none;
+}
+
 .attrib-col {
     display: grid;
     justify-items: start;
