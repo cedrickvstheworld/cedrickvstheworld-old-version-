@@ -50,7 +50,7 @@ class FourthBlock extends Component {
                 },
                 ems_project: {
                     title: 'EMS(Employee Management System) Project',
-                    description: 'EMS Project is a full-pledged enterprise-level sets of application which provides fully automated, time-driven and intelligent salary processing, attendance management(with face recognition and identification), and employee management features. The architecture is composed mainly of API(Application Programming Interface), web app, and an operational desktop app.',
+                    description: 'EMS Project is a full-pledged enterprise-level set of applications which provides fully automated, time-driven and intelligent salary processing, attendance management(with face recognition and identification), and employee management features. The architecture is composed mainly of API(Application Programming Interface), web app, and an operational desktop app.',
                     site_url: 'https://emsproject.herokuapp.com/emswebext',
                     repository: 'https://github.com/cedie712/EMS_Project',
                     preview_images: [

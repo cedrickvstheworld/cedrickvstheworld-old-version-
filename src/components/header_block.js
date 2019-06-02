@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 // components
 import PreloadFlash from './preload_flash';
 import SecondaryBlock from './secondary_block';
+import EmailSent from './email_sent_alert';
 
 class HeaderBlock extends Component {
 
@@ -108,6 +109,8 @@ class HeaderBlock extends Component {
                     <SecondaryBlock />
 
                 </div>
+
+                <EmailSent />
             </div>
         )
     }
