@@ -19,7 +19,7 @@ class App extends Component {
     return (
       <Router>
         <div className="App" basename={process.env.PUBLIC_URL}>
-          <Route path="/" exact component={HeaderBlock} />
+          <Route path={process.env.PUBLIC_URL + '/'} exact component={HeaderBlock} />
         </div>
       </Router>
     );
