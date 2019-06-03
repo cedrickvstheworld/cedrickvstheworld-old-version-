@@ -1,8 +1,8 @@
 {
-  "name": "cedrickvstheworld",
+  "name": "myportfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://cedie712.github.io/cedrickvstheworld/",
+  "homepage": "https://cedie712.github.io/myportfolio",
   "dependencies": {
     "animate.css": "^3.7.0",
     "axios": "^0.19.0",
