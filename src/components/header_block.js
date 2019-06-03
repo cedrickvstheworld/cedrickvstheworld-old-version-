@@ -44,7 +44,7 @@ class HeaderBlock extends Component {
                     }, 1000);
                     clearInterval(start);
                 }
-            }, 3000);
+            }, 10000);
 
 
 
@@ -106,7 +106,7 @@ class HeaderBlock extends Component {
 
 
                 clearTimeout();
-            }, 4000);
+            }, 11000);
 
 
         });

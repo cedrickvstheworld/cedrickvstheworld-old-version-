@@ -143,6 +143,13 @@
     }
 
 
+    #right-block-2 {
+        /* height: 800px; */
+        overflow-y: scroll;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
     
     #my-photo {
         /* background-image: url('../images/cedieeee.jpg'); */
