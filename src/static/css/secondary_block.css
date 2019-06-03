@@ -142,23 +142,18 @@
         width: 100%;
     }
 
-
     #right-block-2 {
-        /* height: 800px; */
-        /* overflow-y: scroll; */
-        /* padding-top: 50px;
-        padding-bottom: 50px; */
         height: 100vh;
-        padding: 0;
     }
 
-
-    /* #hybrid-table  {
-        top: 7px;
-        max-height: auto;
+    #hybrid-table {
         position: absolute;
-    } */
-    
+        top: 10px;
+    }
+
+    #weaponry-label {
+        display: none;
+    }
     
     #my-photo {
         /* background-image: url('../images/cedieeee.jpg'); */
