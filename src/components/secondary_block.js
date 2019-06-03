@@ -193,7 +193,7 @@ class SecondaryBlock extends Component {
 
                             <div id="hybrid-table" className="animated fadeInUp delay-2s">
                                 <div className="yellow-text text-lighten-3 center-align">
-                                    <h6><b>weaponry</b></h6>
+                                        <h6><b>weaponry</b></h6>
                                 </div>
                                 <div>
                                     {attrib_divs}

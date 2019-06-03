@@ -9,7 +9,6 @@ const c_for_ced = require('../static/images/c_for_ced.png');
 
 
 class PreloadFlash extends Component {
-
     render() {
         return (
             <div className="PreloadFlash">

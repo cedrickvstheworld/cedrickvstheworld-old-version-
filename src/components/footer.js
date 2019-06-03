@@ -22,10 +22,15 @@ class Footer extends Component {
         }
         this.fetch_field_value = this.fetch_field_value.bind(this);
         this.send_message = this.send_message.bind(this);
+        this.scroll_to_top = this.scroll_to_top.bind(this);
     }
 
     fetch_field_value(event) {
         this.setState({ [event.target.name]: event.target.value });
+    }
+
+    scroll_to_top() {
+        window.scrollTo(0, 0);
     }
 
     send_message() {
@@ -219,12 +224,17 @@ class Footer extends Component {
                             </div>
                             <div id="resume-container">
                                 <div id="resume-wrapper" className="center animated slideInRight center-align">
-                                    <a href="https://wwww.google.com" rel="noopener noreferrer" target="_blank"><h6 className="yellow-text text-lighten-3"><i className="fas fa-file-alt"></i>&nbsp;MY RESUME</h6></a>
+                                    <a href="https://drive.google.com/file/d/1BTLvnOzUOY2wronjqouDsPabXGn4tuDn/view?usp=sharing" rel="noopener noreferrer" target="_blank"><h6 className="yellow-text text-lighten-3"><i className="fas fa-file-alt"></i>&nbsp;MY RESUME</h6></a>
                                 </div>
                             </div>
                         </div>
                         <div id="footer-end-container">
                             <div id="footer-end-wrapper" className="animated slideInUp">
+
+                                <div id="back-to-top-container" className="blue-grey darken-4 animated bounce infinite" onClick={this.scroll_to_top}>
+                                    <i className="fas fa-angle-double-up white-text fa-2x"></i>
+                                </div>
+
                                 <div>
 
                                     <div id="links-container" className="animated fadeInRight delay-1s row">

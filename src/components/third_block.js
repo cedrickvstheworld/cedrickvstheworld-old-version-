@@ -49,7 +49,7 @@ class ThirdBlock extends Component {
                                     <div id="instinctive" className="animated fadeInRight delay-1s">
                                         <h6>Keeping Things Simple</h6>
                                         <p className="grey-text text-darken-3 about-p">
-                                            I keep whatever simple and straight to the point. Simple is better than complex.
+                                            I like to keep it simple and straight to the point. Simple is better than complex.
                                     </p>
                                     </div>
                                 </div>

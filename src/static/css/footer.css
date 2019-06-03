@@ -170,6 +170,7 @@ textarea {
 }
 
 .col-link {
+    margin-top: 10px;
     display: grid;
     justify-items: center;
     align-items: center;
@@ -214,6 +215,19 @@ textarea {
         margin-top: 0;
     }
 
+}
+
+#back-to-top-container {
+    cursor: pointer;
+    position: absolute;
+    width: 37px;
+    height: 55px;
+    top: -25px;
+    right: 10%;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    border-radius: 5px;
 }
 
 @media (max-width: 800px) {

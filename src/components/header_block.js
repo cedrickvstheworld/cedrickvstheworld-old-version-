@@ -8,6 +8,30 @@ import EmailSent from './email_sent_alert';
 class HeaderBlock extends Component {
 
     componentDidMount() {
+
+        let indexer = 0;
+        let dots = [];
+        document.querySelectorAll('.loading-dot').forEach((dot) => {
+            dots.push(dot);
+        });
+
+        let loading = setInterval(() => {
+            if (indexer === dots.length) {
+                indexer = 0;
+            }
+
+            for (let i in dots) {
+                dots[i].style.backgroundColor = 'rgb(68, 230, 230)';
+                dots[i].style.transform = 'scale(1)';
+            }
+
+            dots[indexer].style.transform = 'scale(1.5)';
+            dots[indexer].style.backgroundColor = 'rgb(247, 247, 247)';
+
+            indexer++;
+
+        }, 600);
+
         window.addEventListener('load', () => {
 
             let start = setInterval(() => {
@@ -16,6 +40,7 @@ class HeaderBlock extends Component {
                     document.getElementById('preload-wrapper').className += " animated slideOutUp";
                     setTimeout(() => {
                         document.getElementById('preload-wrapper').style.display = 'none';
+                        clearInterval(loading);
                     }, 1000);
                     clearInterval(start);
                 }
