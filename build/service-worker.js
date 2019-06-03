@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/cedrickvstheworld/precache-manifest.0da87eebdfd2e3a747e5ef50211d1947.js"
+  "/cedrickvstheworld/precache-manifest.ee5e246dcb12579677a6100e366a6f86.js"
 );
 
 self.addEventListener('message', (event) => {

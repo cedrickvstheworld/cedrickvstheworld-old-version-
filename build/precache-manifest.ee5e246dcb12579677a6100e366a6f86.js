@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f57924ea703d98e55ed64076f5da7f01",
+    "revision": "8bd5217a1177dcd325297f02c3cd8aad",
     "url": "/cedrickvstheworld/index.html"
   },
   {
@@ -8,15 +8,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/cedrickvstheworld/static/css/2.16a1cfe5.chunk.css"
   },
   {
-    "revision": "a36f19d74a5be803ddb5",
-    "url": "/cedrickvstheworld/static/css/main.e82078fd.chunk.css"
+    "revision": "b73f161cb0f21fb26480",
+    "url": "/cedrickvstheworld/static/css/main.721a3a6e.chunk.css"
   },
   {
     "revision": "21189477b4cf536c29c5",
     "url": "/cedrickvstheworld/static/js/2.2572ff55.chunk.js"
   },
   {
-    "revision": "a36f19d74a5be803ddb5",
+    "revision": "b73f161cb0f21fb26480",
     "url": "/cedrickvstheworld/static/js/main.238d209d.chunk.js"
   },
   {
