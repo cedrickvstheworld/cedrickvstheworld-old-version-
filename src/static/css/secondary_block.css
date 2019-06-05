@@ -1,5 +1,5 @@
 #secondary-block {
-    display: none;
+    /* display: none; */
     top: 100%;
     width: 100%;
     height: 100%;
@@ -61,7 +61,7 @@
 }
 
 #right-block-2 {
-    display: grid;
+    display: none;
     align-items: center;
     justify-items: center;
 }

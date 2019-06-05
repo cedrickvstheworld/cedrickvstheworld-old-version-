@@ -99,19 +99,12 @@ class SecondaryBlock extends Component {
     }
 
     componentDidMount() {
-        // let secondary_block = document.getElementById('left-block-2').offsetTop;
-
-        // document.addEventListener('scroll', () => {
-        //     let top = document.getElementById('left-block-2').getBoundingClientRect().top;
-        //     console.log(top);
-        //     if (top === 0) {
-        //         document.getElementById('my-photo-container').className += '';
-        //     }
-        // });
+       
 
         let check_div_attrib = setInterval(() => {
-            if (isInViewport(document.getElementById('hybrid-table'))) {
-                if (document.getElementById('secondary-block').style.display === 'block') {
+            if (isInViewport(document.getElementById('desc'))) {
+                // if (document.getElementById('secondary-block').style.display === 'block') {
+                    document.getElementById('right-block-2').style.display = 'grid';
                     let delay = 0.5;
                     for (let i in this.state.attributes) {
                         this.fill_bar(`bar_${this.state.attributes[i].attrib}`, parseInt(this.state.attributes[i].mastery), delay);
@@ -121,19 +114,17 @@ class SecondaryBlock extends Component {
                     clearInterval(check_div_attrib);
 
                     // document.getElementById('block-three').style.display = 'block';
-                }
+                // }
             }
         }, 100);
 
 
         let check_div_desc = setInterval(() => {
             if (isInViewport(document.getElementById('secondary-block'))) {
-                if (document.getElementById('secondary-block').style.display === 'block') {
-                    setTimeout(() => {
-                        document.getElementById('desc').style.display = 'block';
-                    }, 300);
-                    clearInterval(check_div_desc);
-                }
+                setTimeout(() => {
+                    document.getElementById('desc').style.display = 'block';
+                }, 300);
+                clearInterval(check_div_desc);
             }
         }, 100);
 
@@ -174,7 +165,7 @@ class SecondaryBlock extends Component {
                         <div id="left-block-2" className="col m6 white darken-1 center animated slideInUp">
                             <div id="desc">
                                 <div id="my-photo-container">
-                                    <img id="my-photo" ref="my_photo" src={my_photo} alt="cedie is cool" className="animated bounceInDown" />
+                                    <img id="my-photo" ref="my_photo" src={my_photo} alt="cedie is cool" className="animated bounceInLeft" />
                                 </div>
                                 <div id="my-desc-container">
                                     <div>
@@ -189,9 +180,9 @@ class SecondaryBlock extends Component {
                                 </div>
                             </div>
                         </div>
-                        <div id="right-block-2" className="col m6 blue-grey darken-4  animated slideInUp delay-1s">
+                        <div id="right-block-2" className="col m6 blue-grey darken-4  animated slideInUp">
 
-                            <div id="hybrid-table" className="animated fadeInUp delay-2s">
+                            <div id="hybrid-table" className="animated fadeInUp">
                                 <div className="yellow-text text-lighten-3 center-align">
                                         <h6 id="weaponry-label"><b>weaponry</b></h6>
                                 </div>

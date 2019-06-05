@@ -18,9 +18,9 @@ class ThirdBlock extends Component {
                 setTimeout(() => {
                     document.getElementById('about-header-wrapper').style.display = 'grid';
                     document.getElementById('about-body-wrapper').style.display = 'block';
-                    document.getElementById('block-three').style.height = 'auto';
-                    document.getElementById('block-four').style.display = 'block';
-                }, 1100);
+                    // document.getElementById('block-three').style.height = 'auto';
+                    // document.getElementById('block-four').style.display = 'block';
+                }, 300);
                 clearInterval(check_div_about);
             }
         }, 100);

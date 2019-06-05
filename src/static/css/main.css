@@ -1,14 +1,16 @@
 html {
     margin: 0;
     padding: 0;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
     scroll-behavior: smooth;
 }
 
 
 
 #head-wrapper {
-    display: none;
+    /* display: none; */
+    /* background-image: linear-gradient(rgb(0, 255, 221), rgb(250, 250, 250)); */
 }
 
 #header-block {
@@ -18,6 +20,50 @@ html {
     display: grid;
     align-items: center;
     justify-items: center;
+	color: #fff;
+    background: linear-gradient(-45deg, rgb(16, 127, 161), rgb(173, 166, 67), rgb(24, 126, 163), rgb(10, 233, 10));
+    font-weight: 500 !important;
+	background-size: 400% 400%;
+	-webkit-animation: bg-color-transition 15s ease infinite;
+	-moz-animation: bg-color-transition 15s ease infinite;
+	animation: bg-color-transition 15s ease infinite;
+}
+
+
+@-webkit-keyframes bg-color-transition {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes bg-color-transition {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes bg-color-transition {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
 }
 
 
@@ -64,6 +110,35 @@ img {
     background: rgb(60, 179, 216); 
     border-radius: 10px;
   }
+
+
+#my-works-navigator {
+    /* position: absolute; */
+    margin-top: 10px;
+    outline: none;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    height: 45px;
+    padding-left: 28px;
+    padding-right: 28px;
+    transition: 0.2s;
+    /* width: auto;
+    animation-name: showcase-button-animation;
+    animation-duration: 1s;
+    animation-fill-mode: forwards; */
+}
+
+#my-works-arrow {
+    margin-left: 10px;
+    transition: 0.2s;
+}
+
+#my-works-navigator:hover #my-works-arrow {
+    transform: rotate(90deg);
+}
 
 @media (max-width: 700px) {
     #header-block {
