@@ -9,11 +9,25 @@ class HeaderBlock extends Component {
 
 
     show_my_works() {
-        document.getElementById('block-four').scrollIntoView();
+        let works_div = document.getElementById('block-four');
+        works_div.scrollIntoView();
         setTimeout(() => {
-            document.getElementById('block-four').scrollIntoView();
-        }, 900)
+            works_div.scrollIntoView();
+        }, 1000);
     }
+
+    show_profile() {
+        let secondary_block = document.getElementById('secondary-block');
+        secondary_block.scrollIntoView();
+    }   
+
+    show_contact() {
+        let footer_block = document.getElementById('footer-container');
+        footer_block.scrollIntoView();
+        setTimeout(() => {
+            footer_block.scrollIntoView();
+        }, 2500);
+    }   
 
     render() {
 
@@ -32,6 +46,14 @@ class HeaderBlock extends Component {
 
                             <button className="animated fadeInUp" id="my-works-navigator" onClick={this.show_my_works.bind(this)}>
                                 MY WORKS&nbsp;<i id="my-works-arrow" className="fas fa-arrow-right"></i></button>
+                        </div>
+
+
+                        <div id="circle-profile" className="circle" onClick={this.show_profile.bind(this)}>
+                            <i className="fas fa-user white-text fa-2x link-fa-head animated fadeInUp "></i>
+                        </div>
+                        <div id="circle-contact" className="circle" onClick={this.show_contact.bind(this)}>
+                            <i className="fas fa-phone white-text fa-2x link-fa-head animated fadeInUp"></i>
                         </div>
                     </div>
 

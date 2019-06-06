@@ -32,6 +32,7 @@
 }
 
 
+
 #underline-portfolio {
     margin-top: -10px;
     height: 6px;
@@ -63,6 +64,8 @@
     /* border-style: solid;
     border-width: 1px;
     border-color: rgb(122, 196, 214); */
+    margin-bottom: 20px;
+    box-shadow: 2px 18px 20px 3px rgb(63, 63, 63);
 }
 
 
@@ -178,7 +181,6 @@
 #memo {
     background-image: url('../images/portfolio_thumbnails/memo_desktop.png');
     /* border-color: rgb(23, 89, 110); */
-
 }
 
 #cctti {
@@ -355,6 +357,9 @@
 }
 
 @media (max-width: 800px) {
+    #body-block-portfolio .col {
+        min-width: 50%;
+    }
 
     #portfolio-body-wrapper {
         padding: 0;
@@ -417,6 +422,10 @@
 @media (max-width: 500px) {
     #close-container {
         left: 44.4%;
+    }
+
+    #body-block-portfolio .col {
+        min-width: 100%;
     }
 }
 

@@ -25,9 +25,12 @@
     justify-items: center;
 }
 
+#about-body {
+    height: 100vh;
+}
+
 #about-body-wrapper {
     display: none;
-
     margin-top: 10px;
 }
 

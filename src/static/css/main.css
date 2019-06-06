@@ -21,7 +21,8 @@ html {
     align-items: center;
     justify-items: center;
 	color: #fff;
-    background: linear-gradient(-45deg, rgb(16, 127, 161), rgb(173, 166, 67), rgb(24, 126, 163), rgb(10, 233, 10));
+    background: linear-gradient(-45deg, rgb(115, 221, 15), rgb(173, 166, 67), rgb(24, 126, 163), rgb(61, 231, 9));
+    /* background: linear-gradient(-45deg, #8fe61e, #e4d555, #3097b6, #0e6159); */
     font-weight: 500 !important;
 	background-size: 400% 400%;
 	-webkit-animation: bg-color-transition 15s ease infinite;
@@ -140,7 +141,54 @@ img {
     transform: rotate(90deg);
 }
 
-@media (max-width: 700px) {
+
+#circle-profile {
+    margin-right: 100px; 
+}
+
+#circle-contact {
+    margin-left: 100px; 
+}
+
+.circle {
+    cursor: pointer;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    width: 70px;
+    height: 70px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    background-color: rgba(255, 255, 255, 0.082);
+    border-radius: 40px;
+    position: absolute;
+    bottom: 10%;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+
+.circle:hover {
+    transform: scale(0.9);
+}
+
+/* @keyframes link-animation-head {
+    0% {
+        margin-top: 0;
+    }
+    55% {
+        margin-top: 100px;
+    }
+    56% {
+        margin-top: -100px;
+    }
+    100% {
+        margin-top: 0;
+    }
+
+} */
+
+@media (max-width: 800px) {
     #header-block {
         padding: 20px;
     }

@@ -128,7 +128,7 @@ class FourthBlock extends Component {
         repo_link.target = '_blank';
         repo_link.innerHTML = this.state.projects[project].repository;
         repo_container.appendChild(repo_link);
-        
+
         let link_container = document.getElementById('site-url-container');
         link_container.innerHTML = '';
 
@@ -136,7 +136,7 @@ class FourthBlock extends Component {
             let link_container = document.getElementById('site-url-container');
             link_container.innerHTML = '';
             let fa_i = document.createElement('i');
-            fa_i.className = 'fas fa-external-link-alt teal-text';
+            fa_i.className = 'fas fa-external-link-alt grey-text text-darken-3';
             link_container.appendChild(fa_i);
             let link = document.createElement('a');
             link.href = this.state.projects[project].site_url;
@@ -162,7 +162,7 @@ class FourthBlock extends Component {
                 arrow.style.display = "block";
             });
 
- 
+
 
             next.addEventListener('click', () => {
                 carousel_index++;
@@ -171,7 +171,7 @@ class FourthBlock extends Component {
                 }
                 image_container.style.backgroundImage = `url(${this.state.projects[project].preview_images[carousel_index]})`;
             });
-    
+
             prev.addEventListener('click', () => {
                 carousel_index--;
                 if (carousel_index === -1) {
@@ -231,10 +231,9 @@ class FourthBlock extends Component {
                 setTimeout(() => {
                     document.getElementById('portfolio-body-wrapper').style.display = 'block';
                     document.getElementById('block-four').style.height = 'auto';
-                    setTimeout(() => {
-                        document.getElementById('body-block-portfolio').style.boxShadow = '2px 20px 23px 3px rgb(63, 63, 63)'
-                        document.getElementById('footer-container').style.display = 'block';
-                    }, 1000);
+                    // setTimeout(() => {
+                    //     document.getElementById('body-block-portfolio').style.boxShadow = '2px 20px 23px 3px rgb(63, 63, 63)';
+                    // }, 1000);
                 }, 1600);
                 clearInterval(check_div_portfolio_body);
             }
@@ -254,8 +253,8 @@ class FourthBlock extends Component {
                     </div>
                     <div id="showcase-center-block" className="animated bounceInUp">
                         <div id="showcase-upper-block">
-                        <i id="prev" className="fas fa-chevron-left fa-4x preview-arrow"></i>
-                        <i id="next" className="fas fa-chevron-right fa-4x preview-arrow"></i>
+                            <i id="prev" className="fas fa-chevron-left fa-4x preview-arrow"></i>
+                            <i id="next" className="fas fa-chevron-right fa-4x preview-arrow"></i>
                         </div>
                         <div id="showcase-lower-block" className="left-align">
                             <div>
@@ -280,8 +279,8 @@ class FourthBlock extends Component {
                             <div id="portfolio-body-wrapper" >
                                 <div id="body-block-portfolio" className="row">
 
-                                    <div id="memo-container">
-                                        <div id="memo" className="col m4 portfolio-block-showcase animated fadeInDown">
+                                    <div className="col m4">
+                                        <div id="memo" className="portfolio-block-showcase animated fadeInDown">
                                             <div className="showcase-cover">
                                                 <div className="cover-items-wrapper">
                                                     <h5 className="showcase-cover-title grey-text text-darken-4">Memo</h5>
@@ -299,126 +298,142 @@ class FourthBlock extends Component {
                                         </div>
                                     </div>
 
-                                    <div id="cctti" className="col m4 blue portfolio-block-showcase animated fadeInLeft">
-                                        <div className="showcase-cover">
-                                            <div className="cover-items-wrapper grey-text text-darken-3">
-                                                <h5 className="showcase-cover-title grey-text text-darken-4">CCTTI Website</h5>
-                                                <button className="showcase-cover-button" onClick={this.show_showcase_preview.bind(this, 'cctti')}>DETAILS</button>
-                                                <div className="showcase-tool-wrapper">
-                                                    <span>
-                                                        <img className="tool-logo" src={require('../static/images/tool_logos/pythonlogo.png')} alt="py" />
-                                                        <img className="tool-logo" src={require('../static/images/tool_logos/django.png')} alt="django" />
-                                                        <img className="tool-logo" src={require('../static/images/tool_logos/jslogo.png')} alt="js" />
-                                                    </span>
+                                    <div className="col m4">
+                                        <div id="cctti" className="portfolio-block-showcase animated fadeInLeft">
+                                            <div className="showcase-cover">
+                                                <div className="cover-items-wrapper grey-text text-darken-3">
+                                                    <h5 className="showcase-cover-title grey-text text-darken-4">CCTTI Website</h5>
+                                                    <button className="showcase-cover-button" onClick={this.show_showcase_preview.bind(this, 'cctti')}>DETAILS</button>
+                                                    <div className="showcase-tool-wrapper">
+                                                        <span>
+                                                            <img className="tool-logo" src={require('../static/images/tool_logos/pythonlogo.png')} alt="py" />
+                                                            <img className="tool-logo" src={require('../static/images/tool_logos/django.png')} alt="django" />
+                                                            <img className="tool-logo" src={require('../static/images/tool_logos/jslogo.png')} alt="js" />
+                                                        </span>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
 
-                                    <div id="academia" className="col m4 green portfolio-block-showcase animated fadeInRight">
-                                        <div className="showcase-cover">
-                                            <div className="cover-items-wrapper">
-                                                <h5 className="showcase-cover-title grey-text text-darken-4">Academia</h5>
-                                                <button className="showcase-cover-button" onClick={this.show_showcase_preview.bind(this, 'academia')}>DETAILS</button>
-                                                <div className="showcase-tool-wrapper">
-                                                    <span>
-                                                        <img className="tool-logo" src={require('../static/images/tool_logos/pythonlogo.png')} alt="py" />
-                                                        <img className="tool-logo" src={require('../static/images/tool_logos/django.png')} alt="django" />
-                                                        <img className="tool-logo" src={require('../static/images/tool_logos/jslogo.png')} alt="js" />
-                                                    </span>
+                                    <div className="col m4">
+                                        <div id="academia" className="portfolio-block-showcase animated fadeInRight">
+                                            <div className="showcase-cover">
+                                                <div className="cover-items-wrapper">
+                                                    <h5 className="showcase-cover-title grey-text text-darken-4">Academia</h5>
+                                                    <button className="showcase-cover-button" onClick={this.show_showcase_preview.bind(this, 'academia')}>DETAILS</button>
+                                                    <div className="showcase-tool-wrapper">
+                                                        <span>
+                                                            <img className="tool-logo" src={require('../static/images/tool_logos/pythonlogo.png')} alt="py" />
+                                                            <img className="tool-logo" src={require('../static/images/tool_logos/django.png')} alt="django" />
+                                                            <img className="tool-logo" src={require('../static/images/tool_logos/jslogo.png')} alt="js" />
+                                                        </span>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
 
-                                    <div id="ems" className="col m4 blue portfolio-block-showcase animated fadeInUp">
-                                        <div className="showcase-cover">
-                                            <div className="cover-items-wrapper">
-                                                <h5 className="showcase-cover-title grey-text text-darken-4">EMS Project</h5>
-                                                <button className="showcase-cover-button" onClick={this.show_showcase_preview.bind(this, 'ems_project')}>DETAILS</button>
-                                                <div className="showcase-tool-wrapper">
-                                                    <span>
-                                                        <img className="tool-logo" src={require('../static/images/tool_logos/pythonlogo.png')} alt="py" />
-                                                        <img className="tool-logo" src={require('../static/images/tool_logos/django.png')} alt="django" />
-                                                        <img className="tool-logo" src={require('../static/images/tool_logos/opencv_logo.png')} alt="opencv" />
-                                                        <img className="tool-logo" src={require('../static/images/tool_logos/qtlogo.png')} alt="qt" />
-                                                        <img className="tool-logo" src={require('../static/images/tool_logos/jslogo.png')} alt="js" />
-                                                    </span>
+                                    <div className="col m4">
+                                        <div id="ems" className="red portfolio-block-showcase animated fadeInUp">
+                                            <div className="showcase-cover">
+                                                <div className="cover-items-wrapper">
+                                                    <h5 className="showcase-cover-title grey-text text-darken-4">EMS Project</h5>
+                                                    <button className="showcase-cover-button" onClick={this.show_showcase_preview.bind(this, 'ems_project')}>DETAILS</button>
+                                                    <div className="showcase-tool-wrapper">
+                                                        <span>
+                                                            <img className="tool-logo" src={require('../static/images/tool_logos/pythonlogo.png')} alt="py" />
+                                                            <img className="tool-logo" src={require('../static/images/tool_logos/django.png')} alt="django" />
+                                                            <img className="tool-logo" src={require('../static/images/tool_logos/opencv_logo.png')} alt="opencv" />
+                                                            <img className="tool-logo" src={require('../static/images/tool_logos/qtlogo.png')} alt="qt" />
+                                                            <img className="tool-logo" src={require('../static/images/tool_logos/jslogo.png')} alt="js" />
+                                                        </span>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
 
-                                    <div id="tango_with_django" className="col m4 green portfolio-block-showcase animated fadeInRight">
-                                        <div className="showcase-cover">
-                                            <div className="cover-items-wrapper">
-                                                <h5 className="showcase-cover-title grey-text text-darken-4">Tango with Django 1.7 Revision to Django 2.0</h5>
-                                                <button className="showcase-cover-button" onClick={this.show_showcase_preview.bind(this, 'tango_with_django')}>DETAILS</button>
-                                                <div className="showcase-tool-wrapper">
-                                                    <span>
-                                                        <img className="tool-logo" src={require('../static/images/tool_logos/pythonlogo.png')} alt="py" />
-                                                        <img className="tool-logo" src={require('../static/images/tool_logos/django.png')} alt="django" />
-                                                    </span>
+                                    <div className="col m4">
+                                        <div id="tango_with_django" className="teal portfolio-block-showcase animated fadeInRight">
+                                            <div className="showcase-cover">
+                                                <div className="cover-items-wrapper">
+                                                    <h5 className="showcase-cover-title grey-text text-darken-4">Tango with Django 1.7 Revision to Django 2.0</h5>
+                                                    <button className="showcase-cover-button" onClick={this.show_showcase_preview.bind(this, 'tango_with_django')}>DETAILS</button>
+                                                    <div className="showcase-tool-wrapper">
+                                                        <span>
+                                                            <img className="tool-logo" src={require('../static/images/tool_logos/pythonlogo.png')} alt="py" />
+                                                            <img className="tool-logo" src={require('../static/images/tool_logos/django.png')} alt="django" />
+                                                        </span>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
 
-                                    <div id="jwt" className="col m4 grey portfolio-block-showcase animated fadeInUp">
-                                        <div className="showcase-cover">
-                                            <div className="cover-items-wrapper">
-                                                <h5 className="showcase-cover-title grey-text text-darken-4">JWT-NodeJs-Express-React</h5>
-                                                <button className="showcase-cover-button" onClick={this.show_showcase_preview.bind(this, 'jwt')}>DETAILS</button>
-                                                <div className="showcase-tool-wrapper">
-                                                    <span>
-                                                        <img className="tool-logo" src={require('../static/images/tool_logos/jwt.png')} alt="jwt" />
-                                                        <img className="tool-logo" src={require('../static/images/tool_logos/nodejslogo.png')} alt="nodejs" />
-                                                        <img className="tool-logo" src={require('../static/images/tool_logos/reactlogo.png')} alt="js" />
-                                                    </span>
+                                    <div className="col m4">
+                                        <div id="jwt" className="orange portfolio-block-showcase animated fadeInUp">
+                                            <div className="showcase-cover">
+                                                <div className="cover-items-wrapper">
+                                                    <h5 className="showcase-cover-title grey-text text-darken-4">JWT-NodeJs-Express-React</h5>
+                                                    <button className="showcase-cover-button" onClick={this.show_showcase_preview.bind(this, 'jwt')}>DETAILS</button>
+                                                    <div className="showcase-tool-wrapper">
+                                                        <span>
+                                                            <img className="tool-logo" src={require('../static/images/tool_logos/jwt.png')} alt="jwt" />
+                                                            <img className="tool-logo" src={require('../static/images/tool_logos/nodejslogo.png')} alt="nodejs" />
+                                                            <img className="tool-logo" src={require('../static/images/tool_logos/reactlogo.png')} alt="js" />
+                                                        </span>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
 
-                                    <div id="face" className="col m4 grey portfolio-block-showcase animated fadeInUp">
-                                        <div className="showcase-cover">
-                                            <div className="cover-items-wrapper">
-                                                <h5 className="showcase-cover-title grey-text text-darken-4">Python-OpenCV Face Recognition/Identification</h5>
-                                                <button className="showcase-cover-button" onClick={this.show_showcase_preview.bind(this, 'face')}>DETAILS</button>
-                                                <div className="showcase-tool-wrapper">
-                                                    <span>
-                                                        <img className="tool-logo" src={require('../static/images/tool_logos/pythonlogo.png')} alt="py" />
-                                                        <img className="tool-logo" src={require('../static/images/tool_logos/opencv_logo.png')} alt="opencv" />
-                                                    </span>
+                                    <div className="col m4">
+                                        <div id="face" className="grey portfolio-block-showcase animated fadeInUp">
+                                            <div className="showcase-cover">
+                                                <div className="cover-items-wrapper">
+                                                    <h5 className="showcase-cover-title grey-text text-darken-4">Python-OpenCV Face Recognition/Identification</h5>
+                                                    <button className="showcase-cover-button" onClick={this.show_showcase_preview.bind(this, 'face')}>DETAILS</button>
+                                                    <div className="showcase-tool-wrapper">
+                                                        <span>
+                                                            <img className="tool-logo" src={require('../static/images/tool_logos/pythonlogo.png')} alt="py" />
+                                                            <img className="tool-logo" src={require('../static/images/tool_logos/opencv_logo.png')} alt="opencv" />
+                                                        </span>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
 
-                                    <div id="password-validator" className="col m4 grey portfolio-block-showcase animated fadeInLeft">
-                                        <div className="showcase-cover">
-                                            <div className="cover-items-wrapper">
-                                                <h5 className="showcase-cover-title grey-text text-darken-4">Password Validator Js</h5>
-                                                <button className="showcase-cover-button" onClick={this.show_showcase_preview.bind(this, 'password_validator')}>DETAILS</button>
-                                                <div className="showcase-tool-wrapper">
-                                                    <span>
-                                                        <img className="tool-logo" src={require('../static/images/tool_logos/jslogo.png')} alt="js" />
-                                                    </span>
+                                    <div className="col m4">
+                                        <div id="password-validator" className="blue portfolio-block-showcase animated fadeInLeft">
+                                            <div className="showcase-cover">
+                                                <div className="cover-items-wrapper">
+                                                    <h5 className="showcase-cover-title grey-text text-darken-4">Password Validator Js</h5>
+                                                    <button className="showcase-cover-button" onClick={this.show_showcase_preview.bind(this, 'password_validator')}>DETAILS</button>
+                                                    <div className="showcase-tool-wrapper">
+                                                        <span>
+                                                            <img className="tool-logo" src={require('../static/images/tool_logos/jslogo.png')} alt="js" />
+                                                        </span>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
 
-                                    <div id="university_corner" className="col m4 grey portfolio-block-showcase animated fadeInRight">
-                                        <div className="showcase-cover">
-                                            <div className="cover-items-wrapper">
-                                                <h5 className="showcase-cover-title grey-text text-darken-4">University Corner</h5>
-                                                <button className="showcase-cover-button" onClick={this.show_showcase_preview.bind(this, 'university_corner')}>DETAILS</button>
-                                                <div className="showcase-tool-wrapper">
-                                                    <span>
-                                                        <img className="tool-logo" src={require('../static/images/tool_logos/phplogo.png')} alt="php" />
-                                                        <img className="tool-logo" src={require('../static/images/tool_logos/jslogo.png')} alt="js" />
-                                                    </span>
+                                    <div className="col m4">
+                                        <div id="university_corner" className="green portfolio-block-showcase animated fadeInRight">
+                                            <div className="showcase-cover">
+                                                <div className="cover-items-wrapper">
+                                                    <h5 className="showcase-cover-title grey-text text-darken-4">University Corner</h5>
+                                                    <button className="showcase-cover-button" onClick={this.show_showcase_preview.bind(this, 'university_corner')}>DETAILS</button>
+                                                    <div className="showcase-tool-wrapper">
+                                                        <span>
+                                                            <img className="tool-logo" src={require('../static/images/tool_logos/phplogo.png')} alt="php" />
+                                                            <img className="tool-logo" src={require('../static/images/tool_logos/jslogo.png')} alt="js" />
+                                                        </span>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
