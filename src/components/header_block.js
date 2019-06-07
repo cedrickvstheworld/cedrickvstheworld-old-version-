@@ -19,7 +19,7 @@ class HeaderBlock extends Component {
     show_profile() {
         let secondary_block = document.getElementById('secondary-block');
         secondary_block.scrollIntoView();
-    }   
+    }
 
     show_contact() {
         let footer_block = document.getElementById('footer-container');
@@ -27,7 +27,7 @@ class HeaderBlock extends Component {
         setTimeout(() => {
             footer_block.scrollIntoView();
         }, 2500);
-    }   
+    }
 
     render() {
 
@@ -39,21 +39,21 @@ class HeaderBlock extends Component {
                         <div className="center-align center">
                             <span>
 
-                                <h4 className="white-text animated fadeIn">I am Cedrick Domingo<br />
-                                    I like bringing imaginations
-                                    into reality</h4>
+                                <h3 id="main-heading" className="white-text animated fadeInDown">I am Cedrick Domingo</h3>
+                                <h5 className="animated fadeInLeft">I like bringing imaginations
+                                    into reality</h5>
                             </span>
 
-                            <button className="animated fadeInUp" id="my-works-navigator" onClick={this.show_my_works.bind(this)}>
+                            <button className="animated fadeInRight" id="my-works-navigator" onClick={this.show_my_works.bind(this)}>
                                 MY WORKS&nbsp;<i id="my-works-arrow" className="fas fa-arrow-right"></i></button>
                         </div>
 
 
-                        <div id="circle-profile" className="circle" onClick={this.show_profile.bind(this)}>
-                            <i className="fas fa-user white-text fa-2x link-fa-head animated fadeInUp "></i>
+                        <div id="circle-profile" className="circle-link" onClick={this.show_profile.bind(this)}>
+                            <i className="far fa-user white-text fa-3x link-fa-head animated fadeInUp circle-link-item"></i>
                         </div>
-                        <div id="circle-contact" className="circle" onClick={this.show_contact.bind(this)}>
-                            <i className="fas fa-phone white-text fa-2x link-fa-head animated fadeInUp"></i>
+                        <div id="circle-contact" className="circle-link" onClick={this.show_contact.bind(this)}>
+                            <i className="far fa-envelope white-text fa-3x link-fa-head animated fadeInUp circle-link-item"></i>
                         </div>
                     </div>
 

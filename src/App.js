@@ -6,6 +6,8 @@ import HeaderBlock from './components/header_block';
 
 
 // css
+// css
+import './static/css/fontawesome/css/all.min.css';
 import 'materialize-css/dist/css/materialize.min.css';
 import 'animate.css';
 import './static/css/main.css';

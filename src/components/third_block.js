@@ -14,9 +14,9 @@ import '../static/css/third_block.css';
 class ThirdBlock extends Component {
     componentDidMount() {
         let check_div_about = setInterval(() => {
-            if (isInViewport(document.getElementById('about-header'))) {
+            if (isInViewport(document.getElementById('about-body'))) {
                 setTimeout(() => {
-                    document.getElementById('about-header-wrapper').style.display = 'grid';
+                    // document.getElementById('about-header-wrapper').style.display = 'grid';/
                     document.getElementById('about-body-wrapper').style.display = 'block';
                     document.getElementById('about-body').style.height = 'auto';
                 }, 300);
@@ -30,12 +30,12 @@ class ThirdBlock extends Component {
             <div className="ThirdBlock">
                 <div id="block-three">
 
-                    <div id="about-header" className="center-align">
+                    {/* <div id="about-header" className="center-align">
                         <div id="about-header-wrapper">
                             <h4 className="grey-text text-darken-3 animated fadeInDown"><b>ABOUT</b></h4>
                             <div id="underline-about" className="grey darken-3"></div>
                         </div>
-                    </div>
+                    </div> */}
 
                     <div id="about-body" className="container grey-text text-darken-1">
                         <div id="about-body-wrapper" >

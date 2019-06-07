@@ -112,6 +112,9 @@ img {
     border-radius: 10px;
   }
 
+/* #main-heading {
+    font-family: Arial, Helvetica, sans-serif;
+} */
 
 #my-works-navigator {
     /* position: absolute; */
@@ -143,32 +146,35 @@ img {
 
 
 #circle-profile {
-    margin-right: 100px; 
+    /* margin-right: 100px;  */
+    margin-right: 70px;
 }
 
 #circle-contact {
-    margin-left: 100px; 
+    /* margin-left: 100px;  */
+    margin-left: 70px;
 }
 
-.circle {
+.circle-link {
     cursor: pointer;
     display: grid;
     align-items: center;
     justify-items: center;
     width: 70px;
     height: 70px;
-    border-style: solid;
+    /* border-style: solid;
     border-width: 1px;
-    border-color: white;
-    background-color: rgba(255, 255, 255, 0.082);
-    border-radius: 40px;
+    border-color: white; */
+    /* background-color: rgba(255, 255, 255, 0.082); */
+    background-color: transparent;
+    /* border-radius: 40px; */
     position: absolute;
-    bottom: 10%;
+    bottom: 20%;
     overflow: hidden;
     transition: 0.3s ease;
 }
 
-.circle:hover {
+.circle-link:hover {
     transform: scale(0.9);
 }
 
@@ -191,5 +197,9 @@ img {
 @media (max-width: 800px) {
     #header-block {
         padding: 20px;
+    }
+
+    #main-heading {
+        margin-top: -150px;
     }
 }
