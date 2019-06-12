@@ -14,89 +14,6 @@ let my_photo = require('../static/images/ced2.jpg')
 
 
 class SecondaryBlock extends Component {
-    constructor() {
-        super();
-        this.state = {
-            attributes: [
-                {
-                    attrib: 'Python3',
-                    mastery: '89'
-                },
-                {
-                    attrib: 'JavaScript',
-                    mastery: '82'
-                },
-                {
-                    attrib: 'Django',
-                    mastery: '90'
-                },
-                {
-                    attrib: 'NodeJS',
-                    mastery: '90'
-                },
-                {
-                    attrib: 'ExpressJS',
-                    mastery: '95'
-                },
-                {
-                    attrib: 'ReactJS',
-                    mastery: '80'
-                },
-                {
-                    attrib: 'Redux',
-                    mastery: '70'
-                },
-                {
-                    attrib: 'Postgres',
-                    mastery: '92'
-                },
-                {
-                    attrib: 'MySQL',
-                    mastery: '92'
-                },
-                {
-                    attrib: 'MongoDB',
-                    mastery: '89'
-                },
-                {
-                    attrib: 'Linux',
-                    mastery: '82'
-                },
-                {
-                    attrib: 'Git',
-                    mastery: '92'
-                },
-                {
-                    attrib: 'C++',
-                    mastery: '30'
-                },
-                {
-                    attrib: 'Jquery',
-                    mastery: '90'
-                },
-                {
-                    attrib: 'OpenCV',
-                    mastery: '60'
-                },
-                {
-                    attrib: 'CSS',
-                    mastery: '80'
-                },
-                {
-                    attrib: 'Bootstrap',
-                    mastery: '95'
-                },
-                {
-                    attrib: 'Materialize',
-                    mastery: '95'
-                },
-                {
-                    attrib: 'Qt4/Qt5',
-                    mastery: '91'
-                },
-            ]
-        }
-    }
 
     componentDidMount() {
 
@@ -200,7 +117,7 @@ class SecondaryBlock extends Component {
                                 </div>
                             </div> */}
                             <div id="skill-set" className="animated fadeInUp">
-                                <h6 className="yellow-text text-lighten-1">I have knowledge and experience in these following tools and technologies:</h6>
+                                <h6 className="yellow-text text-lighten-1">I have knowledge and experience in the following tools and technologies:</h6>
                                 <div className="row white-text">
                                     <div className="col s6">
                                         <h5>Python3</h5>
